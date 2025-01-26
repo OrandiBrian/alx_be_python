@@ -9,10 +9,10 @@ class Book:
 class EBook(Book):
     def __init__(self, title: str, author: str, file_size: int):
         super().__init__(title, author)
-        self.size = file_size
+        self.file_size = file_size
 
     def __str__(self):
-        return f"EBook: {self.title} by {self.author}, File Size: {self.size}"
+        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}"
 
 class PrintBook(Book):
     def __init__(self, title: str, author: str, page_count: int):
